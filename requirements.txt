@@ -1,0 +1,31 @@
+# Core data handling
+pandas>=1.5
+numpy>=1.23
+
+# Text preprocessing & sentiment
+nltk>=3.8
+textblob>=0.17
+scikit-learn>=1.2
+
+# API (Flask backend)
+flask>=2.2
+flask-cors>=4.0
+
+# Visualization
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.18
+
+# HTTP requests (for fetching headlines)
+requests>=2.31
+beautifulsoup4>=4.12
+
+# Logging & config
+python-dotenv>=1.0
+
+# Metrics / testing
+pytest>=7.4
+
+# Optional: transformer models (if extending sentiment analysis later)
+transformers>=4.39
+torch>=2.2
