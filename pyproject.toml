@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latest-news-headlines-sentiment"
+version = "0.1.0"
+description = "A sentiment analysis pipeline for recent news headlines, with API and dashboards."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Sammeta Dinesh Kumar", email = "sammetadineshkumar@gmail.com" }
+]
+requires-python = ">=3.9"
+keywords = ["sentiment-analysis", "news", "NLP", "Flask", "dashboard", "data-pipeline"]
+
+dependencies = [
+    "pandas>=1.5",
+    "numpy>=1.23",
+    "nltk>=3.8",
+    "textblob>=0.17",
+    "scikit-learn>=1.2",
+    "flask>=2.2",
+    "flask-cors>=4.0",
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+    "plotly>=5.18",
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "python-dotenv>=1.0",
+    "pytest>=7.4"
+]
+
+# Optional extras (install via pip install .[nlp] or pip install .[dashboard])
+[project.optional-dependencies]
+nlp = [
+    "transformers>=4.39",
+    "torch>=2.2"
+]
+dashboard = [
+    "streamlit>=1.30",
+    "dash>=2.14"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+"Homepage" = "https://github.com/Dineshkumarsammeta/latest_news_headlines_sentiment-analysis"
+"Bug Tracker" = "https://github.com/Dineshkumarsammeta/latest_news_headlines_sentiment-analysis/issues"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests"
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
