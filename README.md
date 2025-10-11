@@ -1,7 +1,7 @@
 # Latest News Headlines Sentiment Analysis
 
 ## 📌 Overview  
-This project collects **news headlines**, performs **sentiment analysis**, and presents trends and insights through dashboards or visual reports. The goal is to help stakeholders see how public sentiment evolves across news topics over time.
+This project gathers **News Headlines**,  **Sentiment Analyses**, and uses dashboards or visual reports to display patterns and insights. Helping stakeholders understand how public opinion changes over time on various news issues is the aim.
 
 ## 🗓 Timeline  
 - **Start Date:** [Jan 2025]  
