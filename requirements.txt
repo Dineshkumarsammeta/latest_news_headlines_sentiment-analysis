@@ -26,6 +26,9 @@ python-dotenv>=1.0
 # Metrics / testing
 pytest>=7.4
 
+Flask==3.0.3
+gunicorn==22.0.0
+
 # Optional: transformer models (if extending sentiment analysis later)
 transformers>=4.39
 torch>=2.2
